@@ -281,7 +281,7 @@ footer > p {
   top: 25%;
 }
 
-#popup.show ~ #overlay {
+#overlay.show {
   opacity: 0.8;
   visibility: visible;
   z-index: 100;
@@ -299,6 +299,7 @@ footer > p {
 }
 
 #popup > form {
+  color: rgba(29,242,253,1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -312,8 +313,16 @@ footer > p {
 }
 
 #submit {
-  margin-top: 3px;
-  width: 100px;
+  color: azure;
+  background-color: rgba(29,242,253, 0.8);
+  margin-top: 6px;
+  width: 130px;
+  height: 35px;
+}
+
+#submit:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
 }
 
 input {
@@ -339,9 +348,9 @@ textarea {
 }
 
 #popup-close {
+  color: rgba(29,242,253,1);
   font-size: 23px;
   float: right;
-  padding: 10px;
   cursor: pointer;
   margin-top: 20px;
 }
