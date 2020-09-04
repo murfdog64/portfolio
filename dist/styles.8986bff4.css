@@ -1,0 +1,378 @@
+* {
+  /* box-sizing: border-box; */
+  /* font-family: 'Chakra Petch', sans-serif; */
+  font-family: 'Major Mono Display', monospace;
+}
+
+body {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1, h2, .hello {
+  background: linear-gradient(90deg, rgba(58,180,169,1) 0%, rgba(29,242,253,1) 50%, rgba(69,191,252,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: 'Chakra Petch', sans-serif;
+  background: linear-gradient(90deg, rgba(58,180,169,1) 0%, rgba(29,242,253,1) 50%, rgba(69,191,252,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:link {
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+}
+
+a:visited {
+  color: rgba(29,242,253,1)
+}
+
+.backdrop-1 {
+  position: fixed;
+  z-index: -3;
+  width: 100%;
+  top: -42%;
+}
+
+.backdrop-2 {
+  position: fixed;
+  z-index: -2;
+  width: 100%;
+  top: -8%;
+}
+
+.backdrop-3 {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  top: 17%;
+}
+
+#landing {
+  position: relative;
+  display: block;
+  justify-content: center;
+  width: 555px;
+  height: 63vh;
+}
+
+.hello {
+  font-size: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: -32%;
+  width: 85%;
+  z-index: 1;
+}
+
+.hello > p {
+  font-size: 20px;
+  left: -32%;
+}
+
+.hillside {
+  flex: none;
+  position: relative;
+  width: 132%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.sites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.site-card {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 15vw;
+  height: 150px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.img, .card-overlay {
+  transition: .3s all;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.github {
+  font-size: 25px;
+  transition: .3s all;
+  width: fit-content;
+  margin-left: 20px;
+}
+
+.netlify {
+  font-size: 25px;
+  transition: .3s all;
+  width: fit-content;
+  margin-right: 20px;
+}
+
+.github:hover {
+  color: white;
+  font-weight: bold;
+  -webkit-text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  -moz-text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+}
+
+.netlify:hover {
+  color: white;
+  font-weight: bold;
+  -webkit-text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  -moz-text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+}
+
+
+.card-overlay > h2 {
+  padding-top: 2%;
+}
+
+.site-card:hover {
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  box-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+}
+
+.site-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.site-card:hover .thumbnail {
+  -webkit-filter: blur(3px) brightness(0.4);
+  filter: blur(3px) brightness(0.4);
+  }
+
+.thumbnail {
+  flex: none;
+  top: 50%;
+  left: 50%;
+  object-fit: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  height: 30vh;
+  width: 100%;
+  border-top: white 0.5px;
+  transition: .3s all;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: center;
+  width: 26vw;
+}
+
+footer:hover {
+  border-top: solid;
+  margin-top: -1px;
+}
+
+.selfie {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 13px;
+  margin-bottom: 0;
+}
+
+footer > p {
+  font-size: 18px;
+  width: 200px;
+}
+
+#contact-btn {
+  color: rgba(29,242,253,1);
+  cursor: pointer;
+  font-size: 25px;
+  transition: .3s all;
+  margin-right: 20px;
+}
+
+#contact-btn:hover {
+  color: white;
+  font-weight: bold;
+  -webkit-text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  -moz-text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+  text-shadow: 0px 0px 5px 2px rgba(250,250,250,1);
+}
+
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  bottom: 50%;
+  right: 25%;
+  background: rgb(3, 3, 3, 0.8);
+  padding: 10px;
+  width: 48vw;
+  height: 57vh;
+  z-index: -1;
+  border: solid #1b1b1b 1px;
+  top: -50%;
+  transition: all .5s ease-in-out;
+}
+
+#popup.show {
+  visibility: visible;
+  z-index: 200;
+  opacity: 1;
+  top: 25%;
+}
+
+#popup.show ~ #overlay {
+  opacity: 0.8;
+  visibility: visible;
+  z-index: 100;
+}
+
+#popup:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: solid #1b1b1b 1px;
+}
+
+#popup > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+#popup > form > label {
+  margin: 5px;
+}
+
+#submit {
+  margin-top: 3px;
+  width: 100px;
+}
+
+input {
+  width: 300px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
+#overlay {
+  visibility: hidden;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  z-index: -1;
+}
+
+#popup-close {
+  font-size: 23px;
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  #landing {
+    height: 40vh;
+  }
+
+  .backdrop-1 {
+    top: 0%;
+  }
+
+  .backdrop-2 {
+    top: 29%;
+  }
+  
+  .backdrop-3 {
+    top: 55%;
+  }
+
+  .hello {
+    left: 18%;
+    width: 65%;
+  }
+
+  .hillside {
+    width: 85%;
+    left: 40px;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
