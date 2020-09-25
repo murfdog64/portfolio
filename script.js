@@ -4,10 +4,12 @@ const popup = document.getElementById('popup');
 
 for (let i = 0; i < siteCards.length; i++) {
   siteCards[i].addEventListener("click", function(){
-    if (siteCards[i].style.width !== "66vw") {
-      siteCards[i].style.width = "66vw";
+    this.classList.toggle("active");
+    const content = this.nextElementSibling;
+    if (siteCards[i].style.height !== "60vh") {
+      siteCards[i].style.height = "60vh";
     } else {
-      siteCards[i].style.width = "15vw";
+      siteCards[i].style.height = "18vh";
     }
   });
 }
