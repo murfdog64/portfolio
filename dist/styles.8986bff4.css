@@ -338,12 +338,12 @@ footer > p {
 }
 
 input {
-  width: 300px;
+  width: 27vw;
 }
 
 textarea {
-  width: 300px;
-  height: 100px;
+  width: 27vw;
+  height: 15vh;
 }
 
 #overlay {
@@ -390,9 +390,27 @@ textarea {
   }
 
   .hillside {
-    width: 85%;
-    left: 40px;
-    margin-top: 30px;
+    width: 75%;
+    left: 54px;
+    margin-top: 70px;
+  }
+
+  #popup {
+    right: 25%;
+    width: 80vw;
+    height: 52vh;
+  }
+
+  input {
+    width: 65vw;
+  }
+
+  textarea {
+    width: 65vw;
+  }
+
+  footer > p {
+    opacity: 0;
   }
 }
 
