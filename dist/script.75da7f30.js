@@ -127,8 +127,8 @@ var _loop = function _loop(i) {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
 
-    if (siteCards[i].style.height !== "60vh") {
-      siteCards[i].style.height = "60vh";
+    if (siteCards[i].style.height !== "55vh") {
+      siteCards[i].style.height = "55vh";
     } else {
       siteCards[i].style.height = "18vh";
     }
@@ -176,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63955" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64433" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

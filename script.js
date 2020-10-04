@@ -6,8 +6,8 @@ for (let i = 0; i < siteCards.length; i++) {
   siteCards[i].addEventListener("click", function(){
     this.classList.toggle("active");
     const content = this.nextElementSibling;
-    if (siteCards[i].style.height !== "60vh") {
-      siteCards[i].style.height = "60vh";
+    if (siteCards[i].style.height !== "55vh") {
+      siteCards[i].style.height = "55vh";
     } else {
       siteCards[i].style.height = "18vh";
     }
