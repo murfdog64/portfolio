@@ -19,8 +19,11 @@ document.getElementById('popup-close').onclick = function() {
   popup.className = '';
 }
 
-document.getElementById('contact-btn').onclick = function() {
-  overlay.className = 'show';
-  popup.className = 'show';
+let contactBtns = document.querySelectorAll('.contact-btn');
+for (let i = 0; i < contactBtns.length; i++) {
+  contactBtns[i].onclick = function() {
+    overlay.className = 'show';
+    popup.className = 'show';
+  }
 }
 
