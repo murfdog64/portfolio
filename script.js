@@ -4,14 +4,13 @@ const popup = document.getElementById('popup');
 
 for (let i = 0; i < siteCards.length; i++) {
   siteCards[i].addEventListener("click", function(){
-    this.classList.toggle("active");
-    const content = this.nextElementSibling;
-    if (siteCards[i].style.height !== "55vh") {
-      siteCards[i].style.height = "55vh";
-    } else {
-      siteCards[i].style.height = "18vh";
+    let current = document.getElementsByClassName("active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
     }
+    this.classList.toggle("active");
   });
+  
 }
 
 document.getElementById('popup-close').onclick = function() {
