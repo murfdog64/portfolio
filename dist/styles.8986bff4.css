@@ -392,12 +392,31 @@ textarea {
 }
 
 @media only screen and (max-width: 500px) {
+
+  #header {
+    font-size: 15px;
+  }
+
+  #header > .contact-btn {
+    font-size: 15px;
+    margin-right: 0px;
+  }
+
   #landing {
     height: 40vh;
   }
 
   .backdrop-1 {
-    top: 0%;
+    top: 44%;
+    position: fixed;
+  }
+
+  .card-text-box {
+    display: none;
+  }
+
+  .link-container {
+    flex-direction: column;
   }
 
   .hello {
@@ -409,6 +428,23 @@ textarea {
     width: 75%;
     left: 54px;
     margin-top: 70px;
+  }
+
+  #projects {
+    height: fit-content;
+  }
+
+  .sites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65vw;
+  }
+
+  .site-card {
+    width: 50vw;
+    /* height: 13vh; */
   }
 
   #popup {
