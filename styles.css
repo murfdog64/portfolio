@@ -121,14 +121,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65vw;
+  width: 80vw;
 }
 
 .site-card {
   cursor: pointer;
   display: block;
   position: relative;
-  width: 17vw;
+  width: 20vw;
   height: 15vh;
   margin: 10px;
   overflow: hidden;
@@ -141,14 +141,14 @@ h1 {
 }
 
 .card-overlay > h2 {
-  margin-top: 35px;
-  padding-bottom: 11px;
+  margin-top: 10px;
+  padding-bottom: 1px;
 }
 
 .card-text-box {
   display: flex;
-  margin-left: 15%;
-  margin-right: 15%
+  margin-left: 5%;
+  margin-right: 5%
 }
 
 .img, .card-overlay {
