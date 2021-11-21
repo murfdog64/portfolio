@@ -19,6 +19,7 @@ body {
   padding: 10px;
   font-size: 20px;
   width: 100%;
+  background-color: #151515;
 }
 
 #header:hover {
@@ -269,6 +270,10 @@ footer:hover {
   border-radius: 50%;
   margin: 13px;
   margin-bottom: 0;
+}
+
+footer {
+  background-color: #151515;
 }
 
 footer > p {
