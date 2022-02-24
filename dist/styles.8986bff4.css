@@ -19,11 +19,7 @@ body {
   padding: 10px;
   font-size: 20px;
   width: 100%;
-}
-
-#header:hover {
-  border-bottom: solid;
-  margin-bottom: -3px;
+  background-color: #151515;
 }
 
 #header > .contact-btn {
@@ -71,21 +67,19 @@ a:hover {
   position: relative;
   display: block;
   justify-content: center;
-  width: 555px;
-  height: 50%;
   padding-top: 8px;
 }
 
 .hello {
-  font-size: 36px;
+  font-size: 45px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
   position: absolute;
-  left: -32%;
-  width: 85%;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  line-height: 1.7;
   z-index: 1;
 }
 
@@ -95,24 +89,23 @@ a:hover {
 }
 
 .hillside {
-  flex: none;
   position: relative;
-  width: 132%;
-  height: auto;
-  object-fit: contain;
+  width: 100vw;
 }
 
-
-h1 {
+.title {
+  background-color: #151515;
   text-align: center;
+  margin-top: -2px;
+  width: 100%;
 }
 
 #projects {
+  background-color: #020202;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10px;
   width: 100%;
   height: 50vh;
 }
@@ -235,9 +228,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: inherit;
-  height: 30vh;
+  height: 20vh;
   width: 100%;
-  border-top: white 0.5px;
 }
 
 .contact {
@@ -253,22 +245,16 @@ footer {
   width: 26vw;
 }
 
-footer:hover {
-  border-top: solid;
-  margin-top: 0px;
-}
-/* 
-#projects:hover {
-  border-top: solid;
-  margin-top: -3px;
-} */
-
 .selfie {
   height: 150px;
   width: 150px;
   border-radius: 50%;
   margin: 13px;
   margin-bottom: 0;
+}
+
+footer {
+  background-color: #151515;
 }
 
 footer > p {
